@@ -1,8 +1,8 @@
 """create users, books
 
-Revision ID: 402b2dfeb53e
+Revision ID: 2feb8652cae2
 Revises: 
-Create Date: 2020-11-05 12:27:03.453099
+Create Date: 2022-06-15 17:26:43.922962
 
 """
 from alembic import op
@@ -12,7 +12,7 @@ import sqlalchemy_utils
 import uuid
 
 # revision identifiers, used by Alembic.
-revision = '402b2dfeb53e'
+revision = '2feb8652cae2'
 down_revision = None
 branch_labels = None
 depends_on = None
