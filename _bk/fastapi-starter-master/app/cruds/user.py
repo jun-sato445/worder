@@ -1,5 +1,6 @@
 from fastapi import HTTPException
 from models import User
+from schemas import User
 from sqlalchemy.orm import Session
 from starlette.status import HTTP_404_NOT_FOUND
 from uuid import UUID
@@ -18,3 +19,13 @@ def read_user(db: Session, user_id: UUID):
                             detail='Record not found.')
 
     return item
+
+# def create_user(db: Session, user: schemas.User):
+#     try:
+#         db.add(user)
+        #   db.commit()
+        #   dbrefresh(user)
+#     except BaseException:
+#         raise HTTPException(status_code=HTTP_404_NOT_FOUND,
+#                             detail='Record not found.')
+#     return item
