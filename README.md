@@ -5,13 +5,26 @@ Sample program to build MySQL and Fast API environment with DockerCompose
 Create and Running
 ```
 $ docker-compose up -d --build
+
+# Debug Mode 
+$ docker-compose -f debug-docker-compose.yml up --build -d
 ```
 
 # Demo
 ## Document of API
 http://localhost:8000/docs
 
+#Debug Mode
+http://localhost:8080/docs
 You can try GET, POST, PUT
+
+
+# Show Database
+$ docker exec -it db bash
+
+$ mysql -u user -h 127.0.0.1 -D worder -p
+$ password
+$ show databases;
 
 ## ex) GET
 ```
